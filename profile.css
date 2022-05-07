@@ -88,7 +88,7 @@ button:hover{
 }
 @media screen and (max-width:952px) {
     .progress{
-        padding: 30px;
+        padding: 0px;
         height: 860px;
     }
     .bars{
