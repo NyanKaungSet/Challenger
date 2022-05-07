@@ -8,10 +8,14 @@ body{
 }
 .container{
     padding: 14px;
-    position: absolute;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: fit-content;
+    /*position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);*/
     box-shadow: 25px 25px 75px rgb(0 0 0 / 75%), 10px 10px 70px rgb(0 0 0 / 25%),
     inset 5px 5px 10px rgb(0 0 0 / 50%),
     inset 5px 5px 20px rgb(255 255 255 / 20%), 
@@ -78,7 +82,14 @@ button:hover{
     display: flex;
     justify-content: space-around;
 }
+.bars:first-child{
+    margin-top: 50px;
+}
 @media screen and (max-width:952px) {
+    .progress{
+        padding: 50px;
+        height: 860px;
+    }
     .bars{
         display: block;
     }
