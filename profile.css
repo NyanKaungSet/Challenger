@@ -77,6 +77,7 @@ button:hover{
 /* ---- Progress Section ---- */
 .progress{
     display: none;
+    padding: 50px;
 }
 .bars{
     display: flex;
@@ -87,7 +88,7 @@ button:hover{
 }
 @media screen and (max-width:952px) {
     .progress{
-        padding: 50px;
+        padding: 30px;
         height: 860px;
     }
     .bars{
