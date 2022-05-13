@@ -7,7 +7,7 @@
 .topnav {
     width: 100%;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3f3f3f;
     position: sticky;
     top: 0;
     z-index: 9;
@@ -22,12 +22,12 @@
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: rgb(161, 66, 66);
+    background-color: #6f6f6f;
     color: white;
 }
 .topnav a.active {
-    background-color: brown;
-    color: gold;
+    background-color: #1f1d1d;
+    color: #fff;
 }
 .topnav .icon {
     display: none;
