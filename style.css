@@ -1,9 +1,11 @@
 :root{
-    --primary-white: #fff;
+    --primary-white:#fff;
     --primary-white2:#f2f2f2;
-    --primary-black: #3f3f3f;
+    --primary-black:#3f3f3f;
     --light-black:#6f6f6f;
-    --dark-black: #1f1d1d;
+    --dark-black:#1f1d1d;
+    /*Dark Mode Colors*/
+    --background-color:#333;
 }
 *{
     margin: 0;
@@ -66,10 +68,24 @@ a{
     }
 }
 
+/* -- Dark Mode -- */
+.darkmode{
+    background-color: var(--background-color);
+    color: var(--primary-white2);
+}
+#Darkmode_btn{
+    padding: 10px 21px 10px 21px;
+    font-size: 18px;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 /* -- Footer Section -- */
 .footer{
-    position: fixed;
-    bottom: 0;
+    margin-top: 800px;
     color: var(--primary-white2);
     width: 100%;
     padding: 20px;
@@ -84,4 +100,9 @@ a{
 }
 .footer a:hover{
     color: var(--primary-white);
+}
+@media screen and (max-width:400px) {
+    .footer{
+        font-size: 13px;
+    }
 }
