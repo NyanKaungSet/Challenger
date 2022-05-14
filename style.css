@@ -1,6 +1,7 @@
 :root{
     --primary-white:#fff;
     --primary-white2:#f2f2f2;
+    --black: #000000;
     --primary-black:#3f3f3f;
     --light-black:#6f6f6f;
     --dark-black:#1f1d1d;
@@ -87,10 +88,13 @@ a{
 .content{
     padding: 2px 10px 2px 10px;
 }
+.content a{
+    text-decoration: none;
+}
 
 /* -- Footer Section -- */
 .footer{
-    margin-top: 800px;
+    margin-top: 400px;
     color: var(--primary-white2);
     width: 100%;
     padding: 20px;
@@ -104,7 +108,7 @@ a{
     color: var(--light-black);
 }
 .footer a:hover{
-    color: var(--primary-white);
+    color: var(--dark-black);
 }
 @media screen and (max-width:400px) {
     .footer{
@@ -113,3 +117,26 @@ a{
 }
 
 /* ---- ABOUT US PAGE ---- */
+
+/* --- Contact Section --- */
+.contact{
+    padding: 10px 10px 10px 15px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+}
+.contact p{
+    font-size: 19px;
+}
+.contact p a{
+    color: #8d3d3d;
+}
+.contact p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:700px){
+    .contact{
+        width: 96%;
+    }
+}
