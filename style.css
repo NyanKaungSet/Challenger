@@ -75,14 +75,19 @@ a{
 }
 #Darkmode_btn{
     padding: 10px 21px 10px 21px;
-    font-size: 18px;
     background-color: darkcyan;
+    color: var(--primary-white);
     border: none;
     border-radius: 20px;
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
+/* -- Main Section -- */
+.content{
+    padding: 2px 10px 2px 10px;
+}
+
 /* -- Footer Section -- */
 .footer{
     margin-top: 800px;
@@ -106,3 +111,5 @@ a{
         font-size: 13px;
     }
 }
+
+/* ---- ABOUT US PAGE ---- */
