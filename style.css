@@ -1,13 +1,26 @@
+:root{
+    --primary-white:#fff;
+    --primary-white2:#f2f2f2;
+    --black: #000000;
+    --primary-black:#3f3f3f;
+    --light-black:#6f6f6f;
+    --dark-black:#1f1d1d;
+    /*Dark Mode Colors*/
+    --background-color:#333;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 /* -- Navigation Bar -- */
 .topnav {
     width: 100%;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--primary-black);
     position: sticky;
     top: 0;
     z-index: 9;
@@ -15,22 +28,25 @@
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--primary-white2);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: rgb(161, 66, 66);
+    background-color: var(--light-black);
     color: white;
 }
 .topnav a.active {
-    background-color: brown;
-    color: gold;
+    background-color: var(--dark-black);
+    color: var(--primary-white);
 }
 .topnav .icon {
     display: none;
+}
+.topnav strong{
+    padding-right: 8px;
 }
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {display: none;}
@@ -50,5 +66,77 @@
       float: none;
       display: block;
       text-align: left;
+    }
+}
+
+/* -- Dark Mode -- */
+.darkmode{
+    background-color: var(--background-color);
+    color: var(--primary-white2);
+}
+#Darkmode_btn{
+    padding: 10px 21px 10px 21px;
+    background-color: darkcyan;
+    color: var(--primary-white);
+    border: none;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* -- Main Section -- */
+.content{
+    padding: 2px 10px 2px 10px;
+}
+.content a{
+    text-decoration: none;
+}
+
+/* -- Footer Section -- */
+.footer{
+    margin-top: 400px;
+    color: var(--primary-white2);
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-black);
+    border-top: 1px solid var(--primary-white);
+}
+.footer a{
+    color: var(--light-black);
+}
+.footer a:hover{
+    color: var(--dark-black);
+}
+@media screen and (max-width:400px) {
+    .footer{
+        font-size: 13px;
+    }
+}
+
+/* ---- ABOUT US PAGE ---- */
+
+/* --- Contact Section --- */
+.contact{
+    padding: 10px 10px 10px 15px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+}
+.contact p{
+    font-size: 19px;
+}
+.contact p a{
+    color: #8d3d3d;
+}
+.contact p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:700px){
+    .contact{
+        width: 96%;
     }
 }
