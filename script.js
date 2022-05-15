@@ -11,6 +11,7 @@ function navbar() {
      }
 }
 
+
 //Dark Mode
 function DarkMode() {
   var element = document.body;
