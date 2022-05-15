@@ -76,6 +76,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 5;
 }
 /* -- Main Section -- */
 .content{
@@ -87,7 +88,9 @@
 
 /* -- Footer Section -- */
 .footer{
-    margin-top: 400px;
+    /*margin-top: 200px;*/
+    position: fixed;
+    bottom: 0;
     color: var(--primary-white2);
     width: 100%;
     padding: 20px;
@@ -108,7 +111,46 @@
         font-size: 13px;
     }
 }
-
+/* ---- HOME PAGE ---- */
+.content_mainpage{
+    height: 50vh;
+    margin-top: 100px;
+}
+.alert{
+    margin: 0 auto;
+    width: 80%;
+    color: #000000;
+    background-color: #f3bc00;
+    margin: auto;
+    padding: 14px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'VT323';
+    border-radius: 10px;
+    animation: bg-change 6s linear infinite;
+}
+@keyframes bg-change {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+#construct{
+    font-size: 50px;
+}
+#cog{
+    margin-top: 16px;
+    font-size: 60px;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 /* ---- ABOUT US PAGE ---- */
 
 /* --- Contact Section --- */
