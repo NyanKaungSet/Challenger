@@ -49,3 +49,7 @@ circles.forEach(elem => {
         pointsMarked[i].classList.add('marked')
     }
 })
+
+function facebook_NA(){
+    alert('This link is currently not available!')
+}
