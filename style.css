@@ -169,7 +169,7 @@
 /* --- Timeline Section --- */
 .Timeline{
     color: var(--black);
-    margin:50px auto;
+    margin:100px auto;
     width: 90%;
     background-color: var(--background-color);
     border-radius: 5px;
@@ -178,7 +178,6 @@
 }
 .timeline{
     position:relative;
-    max-width:1200px;
     margin:0 auto;
   }
   .timeline::after {
