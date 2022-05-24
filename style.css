@@ -79,7 +79,39 @@
     right: 20px;
     z-index: 5;
 }
-/* -- Main Section -- */
+
+/* -- Ukraine Section -- */
+#StandWithUkraine{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #005BBB;
+    border: 17px solid #FFD500;
+}
+#StandWithUkraine a{
+    color: var(--primary-white);
+    text-decoration: none;
+}
+#StandWithUkraine a:hover{
+    text-decoration: underline;
+}
+
+#ukraine{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(135deg);
+}
+#ukraine::before{
+    content: '';
+    padding: 400px 7px;
+    background-color: #005BBB;
+}
+#ukraine::after{
+    content: '';
+    padding: 400px 7px;
+    background-color: #FFD500;
+}
 
 /* -- Footer Section -- */
 .footer{
