@@ -15,7 +15,7 @@
     width: 100%;
     overflow: hidden;
     background-color: var(--primary-black);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9;
 }
@@ -82,6 +82,7 @@
 
 /* -- Ukraine Section -- */
 #StandWithUkraine{
+    margin-top: 50px;
     font-size: 20px;
     padding: 10px;
     text-align: center;
