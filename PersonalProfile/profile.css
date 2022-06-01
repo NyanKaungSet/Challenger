@@ -65,6 +65,9 @@ span{
 .icons{
     margin-top: 50px;
 }
+#icons:hover{
+    color: #fff;
+}
 .icons a{
     color: black;
 }
