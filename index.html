@@ -4,87 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=VT323&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenger</title>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="img">
-                <img src="data:image/jpeg;base64,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" alt="Person" class="img">
-                <p class="title1">Nyan Kaung Set<span>(Web Developer)</span></p>
-                <p class="title">Member of <a href="https://cooldevs.netlify.app">CoolDevs Team</a></p>
-            </div>
-            <div class="web_application">
-                <h3>Created Websites</h3>
-                    <li><a href="https://nyankaungset.github.io/Challenger/">Challenger</a></li>
-                    <li><a href="https://nyankaungset.github.io/My-Tools/">My Tools</a></li>
-                </ul>
-            </div>
-
-            <div class="icons">
-                <a id="icons" onclick="facebook_NA()" href=""><ion-icon size="large" name="logo-facebook"></ion-icon></a>
-                <a id="icons"  href="https://gitlab.com/NyanKaungSet"><ion-icon size="large" name="logo-gitlab"></ion-icon></a>
-                <a id="icons"  href="https://github.com/NyanKaungSet"><ion-icon size="large" name="logo-github"></ion-icon></a>
-            </div>
-            <div class="buttons">
-                <button id="Profile_progress">Progress</button>
-                <button id="Profile_contact">Contact</button>
-            </div>
-        </div>
-
-        <div class="progress">
-            <div class="bars">
-                <div class="box">
-                    <div class="circle" data-dots="70" data-percent="60" style="--bgColor: #ff0070"></div>
-                    <div class="text">
-                        <h2>60%</h2>
-                        <small>HTML</small>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="circle" data-dots="70" data-percent="70" style="--bgColor: #52a8ff"></div>
-                    <div class="text">
-                        <h2>70%</h2>
-                        <small>CSS</small>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="circle" data-dots="70" data-percent="40" style="--bgColor: #0f0"></div>
-                    <div class="text">
-                        <h2>40%</h2>
-                        <small>JavaScript</small>
-                    </div>
-                </div><br>
-            </div>
-
-            <div class="buttons">
-                <button id="Progress_profile">Profile</button>
-                <button id="Progress_contact">Contact</button>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="card">
-                <img style="width: 150px;height: 150px;" src="">
-            </div>
-            <p>
-                <ion-icon name="earth-outline"></ion-icon> Myanmar (Burma)<br><br>
-                <ion-icon name="logo-discord"></ion-icon> <a href="https://discord.com/users/908203066518564864/">Discord</a><br>
-                <ion-icon name="logo-github"></ion-icon> <a href="https://github.com/NyanKaungSet">Github</a><br>
-                <ion-icon name="logo-gitlab"></ion-icon> <a href="https://gitlab.com/NyanKaungSet">Gitlab</a><br>
-                <ion-icon name="send"></ion-icon> <a href="https://t.me/NyanKaungSet">Telegram</a>
-            </p>
-            <div class="buttons">
-                <button id="Contact_profile">Profile</button>
-                <button id="Contact_progress">Progress</button>
-            </div>
-        </div>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><ion-icon name="home-outline"></ion-icon> Home</a>
+        <a href="https://nyankaungset.github.io/My-Tools/index.html">My Tools</a>
+        <a href="https://nyankaungset.github.io/Templates/soon.html">Coming Soon</a>
+        <a href="https://nyankaungset.github.io/Templates/soon.html">Coming Soon</a>
+        <a href="about.html"><strong>i</strong>About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <div id="StandWithUkraine">
+        <a href="https://war.ukraine.ua/" target="_blank">#WeStandWithUkraine  🇺🇦</a>
     </div>
 
+
+    <div class="main_container">
+        <div class="content_mainpage">
+            <div class="alert">
+                <ion-icon id="construct" name="construct-outline"></ion-icon>
+                <p>Please try again later. This page is currently under constuction.</p>
+                <ion-icon id="cog" name="cog-outline"></ion-icon>
+            </div>
+        </div>
+        <p id="ukraine"></p>
+        <button id="Darkmode_btn" onclick="DarkMode()"><ion-icon size="large" name="contrast-outline"></ion-icon></button>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2022 Challenger Powered by <a target="_blank" href="https://cooldevs.netlify.app">CoolDevs Team</a></p>
+    </div>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="profile.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
