@@ -1,7 +1,4 @@
-nav{
-    background: linear-gradient(90deg, red, blue);
-}
+nav{background: linear-gradient(90deg, red, blue);}
+#div{min-height: 100vh;}
 .nav-link{font-weight: bold !important;color: #fff !important;}
-.active{
-    font-weight: bold !important;
-background: linear-gradient(-90deg, #333, #3f3f3f);}
+.active{font-weight: bold !important;background: linear-gradient(-90deg, #333, #3f3f3f);}
