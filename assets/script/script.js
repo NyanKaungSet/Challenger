@@ -1,9 +1,4 @@
 //Dark Mode
-window.addEventListener('load', () => {
-  const year = document.getElementById('currentYear');
-  year.innerHTML = new Date().getFullYear();
-})
-
 document.getElementById('darkMode').addEventListener('click',()=>{
   const darkLight = document.getElementById('darkLight');
   if (document.body.classList.contains('dark')) {
