@@ -1,3 +1,4 @@
+::selection{background-color: #d40000;color: #daa520;text-decoration: underline;}
 nav{background: linear-gradient(90deg, red, blue);}
 #div, section{min-height: 100vh;}
 .nav-link{font-weight: bold !important;color: #fff !important;}
