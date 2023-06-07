@@ -3,12 +3,12 @@ document.getElementById('darkMode').addEventListener('click',()=>{
   const darkLight = document.getElementById('darkLight');
   if (document.body.classList.contains('dark')) {
       document.body.classList.remove('dark');
-      darkLight.innerHTML = '&#9790';
+      darkLight.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
       localStorage.setItem('Mode', 'Light');
   }
   else {
       document.body.classList.add('dark');
-      darkLight.innerHTML = '&#9788';
+      darkLight.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
       localStorage.setItem('Mode', 'Dark');
   }
 })
@@ -30,16 +30,16 @@ $(document).ready(function() {
         .siblings(".content")
         .slideUp(200);
       $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+        .removeClass("bi bi-dash-circle-fill")
+        .addClass("bi bi-plus-circle-fill");
     } else {
       $(".set > a i")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+        .removeClass("bi bi-dash-circle-fill")
+        .addClass("bi bi-plus-circle-fill");
       $(this)
         .find("i")
-        .removeClass("fa-plus")
-        .addClass("fa-minus");
+        .removeClass("bi bi-plus-circle-fill")
+        .addClass("bi bi-dash-circle-fill");
       $(".set > a").removeClass("active");
       $(this).addClass("active");
       $(".content").slideUp(200);
